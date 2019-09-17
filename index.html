@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let phone = ['0987625478', '0982312787', '0969123363', '036747968as', '0987733605'];
+
+    function checkPhone() {
+        let regexp = /((09|03|08)+([0-9]{8,9})\b)$/;
+        for (let i = 0; i < phone.length; i++) {
+            if (regexp.test(phone[i])) {
+                document.write('phone[' + i + ']' + 'step go' + '<br>');
+            } else {
+                document.write('phone[' + i + ']' + 'SDT khong dung dinh dang' + '<br>');
+            }
+        }
+    }
+    checkPhone();
+</script>
+</body>
+</html>
